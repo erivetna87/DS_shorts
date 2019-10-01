@@ -1,4 +1,4 @@
-"""Utility Functions for working with DataFrame"""
+"""Utility Functions for working with DataFrames"""
 
 import pandas as pd
 
