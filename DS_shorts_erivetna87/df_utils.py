@@ -2,8 +2,8 @@
 
 import pandas as pd
 import numpy as np
+import statistics as stats
 
-TEST_DF = pd.DataFrame([1,2,3])
 
 def target_statistics(df,col_name):
     iqr = np.percentile(df[str(col_name)],75) - np.percentile(df[str(col_name)],25)
@@ -20,9 +20,7 @@ def target_statistics(df,col_name):
           'Mean:',round(x_bar,2),('\n'),
           'Median:',median,('\n'),
           'Mode:',mode,('\n'),
-          'Tax range:', tax_range,('\n'),
+          'Range:', tax_range,('\n'),
           'Lower Bound:',lower_B,('\n'),
           'Upper Bound:',upper_B,('\n'),
           'Interquartile Range:', iqr)
-
-target_statistiscs = target_statistics()
