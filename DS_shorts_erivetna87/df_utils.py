@@ -24,4 +24,5 @@ def target_statistics(df,col_name):
           'Lower Bound:',lower_B,('\n'),
           'Upper Bound:',upper_B,('\n'),
           'Interquartile Range:', iqr)
-    
+
+target_statistiscs = target_statistics()
